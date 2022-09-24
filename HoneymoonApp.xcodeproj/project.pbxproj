@@ -16,6 +16,9 @@
 		B2C247BF28DEFC5F00C3E234 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C247BE28DEFC5F00C3E234 /* HeaderComponent.swift */; };
 		B2C247C128DEFCBE00C3E234 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C247C028DEFCBE00C3E234 /* GuideComponent.swift */; };
 		B2C247C328DEFDD100C3E234 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C247C228DEFDD100C3E234 /* GuideView.swift */; };
+		B2C247C528DF02F700C3E234 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C247C428DF02F700C3E234 /* InfoView.swift */; };
+		B2C247C928DF038B00C3E234 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C247C828DF038B00C3E234 /* TitleModifier.swift */; };
+		B2C247CC28DF054A00C3E234 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C247CB28DF054A00C3E234 /* ButtonModifier.swift */; };
 		B2F3450828DED743004FAE79 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450728DED743004FAE79 /* HoneymoonModel.swift */; };
 		B2F3450B28DED789004FAE79 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450A28DED789004FAE79 /* HoneymoonData.swift */; };
 		B2F3450E28DED7E6004FAE79 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450D28DED7E6004FAE79 /* CardView.swift */; };
@@ -34,6 +37,9 @@
 		B2C247BE28DEFC5F00C3E234 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		B2C247C028DEFCBE00C3E234 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 		B2C247C228DEFDD100C3E234 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		B2C247C428DF02F700C3E234 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		B2C247C828DF038B00C3E234 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		B2C247CB28DF054A00C3E234 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		B2F3450728DED743004FAE79 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		B2F3450A28DED789004FAE79 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		B2F3450D28DED7E6004FAE79 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			children = (
 				B2C247BD28DEFC4700C3E234 /* Component */,
 				B254DF6928DEC41300996AD6 /* Sounds */,
+				B2C247CA28DF03D200C3E234 /* Modifier */,
 				B2F3450928DED775004FAE79 /* Data */,
 				B2F3450628DED72B004FAE79 /* Model */,
 				B2F3450C28DED7BB004FAE79 /* View */,
@@ -111,6 +118,15 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		B2C247CA28DF03D200C3E234 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				B2C247C828DF038B00C3E234 /* TitleModifier.swift */,
+				B2C247CB28DF054A00C3E234 /* ButtonModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		B2F3450628DED72B004FAE79 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +151,7 @@
 				B2F3450F28DED9E5004FAE79 /* HeaderView.swift */,
 				B2F711BD28DEDD6A003D767B /* FooterView.swift */,
 				B2C247C228DEFDD100C3E234 /* GuideView.swift */,
+				B2C247C428DF02F700C3E234 /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,9 +229,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F3450B28DED789004FAE79 /* HoneymoonData.swift in Sources */,
+				B2C247C528DF02F700C3E234 /* InfoView.swift in Sources */,
 				B2F711BE28DEDD6A003D767B /* FooterView.swift in Sources */,
+				B2C247C928DF038B00C3E234 /* TitleModifier.swift in Sources */,
 				B2F3451028DED9E5004FAE79 /* HeaderView.swift in Sources */,
 				B2F3450828DED743004FAE79 /* HoneymoonModel.swift in Sources */,
+				B2C247CC28DF054A00C3E234 /* ButtonModifier.swift in Sources */,
 				B2C247BF28DEFC5F00C3E234 /* HeaderComponent.swift in Sources */,
 				B254DF5C28DEC2EB00996AD6 /* ContentView.swift in Sources */,
 				B254DF5A28DEC2EB00996AD6 /* HoneymoonAppApp.swift in Sources */,
