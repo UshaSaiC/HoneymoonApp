@@ -16,6 +16,7 @@
 		B2F3450828DED743004FAE79 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450728DED743004FAE79 /* HoneymoonModel.swift */; };
 		B2F3450B28DED789004FAE79 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450A28DED789004FAE79 /* HoneymoonData.swift */; };
 		B2F3450E28DED7E6004FAE79 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450D28DED7E6004FAE79 /* CardView.swift */; };
+		B2F3451028DED9E5004FAE79 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3450F28DED9E5004FAE79 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B2F3450728DED743004FAE79 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		B2F3450A28DED789004FAE79 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		B2F3450D28DED7E6004FAE79 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B2F3450F28DED9E5004FAE79 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		B2F5461E28DEC935000911BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 			children = (
 				B254DF5B28DEC2EB00996AD6 /* ContentView.swift */,
 				B2F3450D28DED7E6004FAE79 /* CardView.swift */,
+				B2F3450F28DED9E5004FAE79 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F3450B28DED789004FAE79 /* HoneymoonData.swift in Sources */,
+				B2F3451028DED9E5004FAE79 /* HeaderView.swift in Sources */,
 				B2F3450828DED743004FAE79 /* HoneymoonModel.swift in Sources */,
 				B254DF5C28DEC2EB00996AD6 /* ContentView.swift in Sources */,
 				B254DF5A28DEC2EB00996AD6 /* HoneymoonAppApp.swift in Sources */,
