@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct GuideView: View {
+    
+    // presentationMode is a key property used to dismiss the sheet view with a custom button
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
@@ -49,7 +53,7 @@ struct GuideView: View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-                    
+                    self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("Continue".uppercased())
                         .font(.headline)
