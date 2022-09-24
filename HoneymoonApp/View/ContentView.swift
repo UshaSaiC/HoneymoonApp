@@ -13,6 +13,7 @@ struct ContentView: View {
     @State var showGuide: Bool = false
     @State var showInfo: Bool = false
     @State private var lastCardIndex: Int = 1
+    @State private var cardRemovalTransition = AnyTransition.trailingBottom
     
     private var dragAreaThreshold: CGFloat = 65.0
     
@@ -116,15 +117,31 @@ struct ContentView: View {
                                     break
                                 }
                             })
-                                .onEnded({ (value) in
+                                .onChanged({ (value) in
                                     guard case .second(true, let drag?) = value else {
                                         return
                                     }
-                                    if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
-                                        self.moveCards()
+                                    
+                                    if drag.translation.width < -self.dragAreaThreshold {
+                                        self.cardRemovalTransition = .leadingBottom
+                                    }
+                                    
+                                    if drag.translation.width > self.dragAreaThreshold {
+                                        self.cardRemovalTransition = .trailingBottom
                                     }
                                 })
-                        )}
+                                    .onEnded({ (value) in
+                                        guard case .second(true, let drag?) = value else {
+                                            return
+                                        }
+                                        if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
+                                            playSound(sound: "sound-rise", type: "mp3")
+                                            self.moveCards()
+                                        }
+                                    })
+                        )
+                        .transition(self.cardRemovalTransition)
+                }
             }
             .padding(.horizontal)
             
